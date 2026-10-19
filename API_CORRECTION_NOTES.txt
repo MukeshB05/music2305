@@ -1,0 +1,9 @@
+Dreamly5 API correction notes
+
+- Updated the API base URL to https://dreamly5api23.vercel.app/api
+- AlbumDetails.jsx now requests album recommendations with reco.getreco, trending albums with reco.getAlbumReco, same-year albums with search.topAlbumsoftheYear, and artist page details with artist.getArtistPageDetails.
+- PlaylistDetails.jsx now requests related playlists with reco.getPlaylistReco, trending content with content.getTrending, and artist page details with artist.getArtistPageDetails.
+- Player.jsx already contained the requested horizontally scrollable You Might Like suggestions UI and Artists section; retained those and their scroll controls.
+- API requests are optional for recommendation sections so a recommendation endpoint failure does not prevent the main album/playlist detail from loading.
+
+Note: The project dependencies were not installed in this environment, so a Vite production build could not be run here. Please run npm install and npm run build before deployment. If the API's endpoint parameter names differ from id/albumId/playlistId/year/language, update those query parameters to match the API contract.

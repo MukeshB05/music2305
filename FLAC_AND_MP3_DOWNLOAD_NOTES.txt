@@ -1,0 +1,1 @@
+Player.jsx supports two download buttons: FLAC and 320 kbps MP3. Both embed song title, artist, album, album artist, year/publisher/copyright when available and try to embed cover artwork. FLAC conversion cannot restore quality lost in a lossy source; actual 320 kbps MP3 conversion re-encodes the available source at 320 kbps and does not create source detail that is absent.
